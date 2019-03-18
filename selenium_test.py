@@ -171,4 +171,13 @@ except AssertionError:
     print("Blessing is not validated")
 
 
-# Arthur
+# Validate blessing information:
+blessing = driver.find_element_by_class_name("card-text")   # Find element to check
+try:
+    assert blessing.text == "Happy Birthday!"
+except AssertionError:
+    print("Blessing is not validated")
+
+
+driver.quit()   # Close the page
+text_url.close()    # Close the text file
