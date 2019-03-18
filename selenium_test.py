@@ -171,6 +171,3 @@ except AssertionError:
     print("Blessing is not validated")
 
 
-driver.quit()   # Close the page
-text_url.close()    # Close the text file
-
