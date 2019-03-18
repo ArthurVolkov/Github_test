@@ -133,42 +133,6 @@ driver.get_screenshot_as_file("C:/Python test/screenshot.png")  # Taking the scr
 # Sender & Receiver information screen
 
 
-if __name__ == '__main__':      # Find business options
-    home_screen()
-
-if __name__ == '__main__':      # Choose the business
-    business_screen()
-
-if __name__ == '__main__':      # Enter sender and receiver info
-    sender_receiver_info()
-
-
-rgb = driver.find_element_by_class_name("step-title").value_of_css_property("color")    # Find the "step" element
-print(Color.from_string(rgb).hex)   # Print the elements color in "hex" format
-
-
-# Validate sender information:
-sender_name = driver.find_elements_by_class_name("name")[1]     # Find element to check
-try:
-    assert sender_name.text == "Arthur"
-except AssertionError:
-    print("Sender name is not validated")
-
-
-# Validate receiver information:
-receiver_name = driver.find_elements_by_class_name("name")[0]   # Find element to check
-try:
-    assert receiver_name.text == "Bill Gates"
-except AssertionError:
-    print("Receiver name is not validated")
-
-
-# Validate blessing information:
-blessing = driver.find_element_by_class_name("card-text")   # Find element to check
-try:
-    assert blessing.text == "Happy Birthday!"
-except AssertionError:
-    print("Blessing is not validated")
-
-
-print("Arthur")
+x = 1
+y = 2
+print(x + y)
