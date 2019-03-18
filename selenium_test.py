@@ -15,7 +15,7 @@ def registration_screen():
     text_url.write(driver.current_url), text_url.write("\n")  # Save current url
     registration_field = driver.find_elements_by_class_name("ember-text-field")    # Find text field
     registration_field[0].send_keys("Arthur")   # Enter the first name
-    registration_field[1].send_keys("Arthur54321@gmail.com")   # Enter E-Mail
+    registration_field[1].send_keys("Arthur12345@gmail.com")   # Enter E-Mail
     registration_field[2].send_keys("Password5")   # Enter the password
     registration_field[3].send_keys("Password5")   # Confirm the password
     driver.find_element_by_class_name("ember-checkbox").send_keys(Keys.SPACE)   # Agree with terms and conditions
@@ -173,3 +173,5 @@ except AssertionError:
 
 driver.quit()   # Close the page
 text_url.close()    # Close the text file
+
+# add changes
