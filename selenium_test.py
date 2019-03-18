@@ -171,4 +171,5 @@ except AssertionError:
     print("Blessing is not validated")
 
 
-print(1)
+x = 1
+print(x)
