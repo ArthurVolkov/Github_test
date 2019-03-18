@@ -171,4 +171,4 @@ except AssertionError:
     print("Blessing is not validated")
 
 
-print("not closed webdriver")
+print(1)
